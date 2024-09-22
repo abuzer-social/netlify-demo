@@ -1,6 +1,6 @@
 const express = require('express');
 const serverless = require('serverless-http');
-
+const dotenv = require("dotenv");
 dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const redirectBaseUrl = process.env.REDIRECT_BASE_URL;
